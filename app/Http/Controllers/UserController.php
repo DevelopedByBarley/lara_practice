@@ -15,7 +15,7 @@ class UserController extends Controller
 
     public function dashboard(User $user)
     {
-        return view('auth.dashboard', [
+        return view('user.dashboard', [
             'user' => Auth::user()
         ]);
     }
@@ -42,11 +42,11 @@ class UserController extends Controller
 
 
     public function showLoginPage() {
-        return view('auth.login');
+        return view('user.auth.login');
     }
 
     public function showRegisterPage() {
-        return view('auth.register');
+        return view('user.auth.register');
     }
     /**
      * Display a listing of the resource.
